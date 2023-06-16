@@ -250,13 +250,13 @@ export const deleteOrderProductByIds = (orderId: string, productId: string, res:
         res.status(500).send(err);
       }
 
-			if (result) {
-				res.send(result);
-			} else {
-				res.send({
-					erro: "Não foi possível deletar o produto, verifique os IDs!"
-				});
-			}
-		}
-	);
+      if (result) {
+        res.send(result);
+      } else {
+        res.send({
+          erro: "Não foi possível deletar o produto, verifique os IDs!"
+        });
+      }
+    }
+  );
 }
